@@ -33,7 +33,7 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.components.engine('@frctl/nunjucks'); // register the Nunjucks adapter for your components
 fractal.components.set('ext', '.html'); // look for files with a .njk file extension
 fractal.components.set('default.preview', '@preview');
-fractal.web.set('builder.dest', __dirname + '/docs');
+fractal.web.set('builder.dest', __dirname + '/_site');
 
 // Theme
 const mandelbrot = require('@frctl/mandelbrot');
